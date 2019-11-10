@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /// Get todos on load
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else { return }
+        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+            guard let dataResponse = data,
+                error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return }
+            do {
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: [])
+                print(jsonResponse) //Response result
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+        }
+        task.resume()
     }
 
-
 }
-

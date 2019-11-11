@@ -15,115 +15,18 @@ class APIManager {
     let baseURL = "https://jsonplaceholder.typicode.com/"
     static let sharedInstance = APIManager()
 
-    func getAll(api: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(JSON) -> Void) {
 
-        Alamofire.request(baseURL + api)
-            .responseJSON { response in
-                // check for errors
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling GETALL on \(api)")
-                    print(response.result.error!)
-                    onFailure(JSON([
-                        "error": response.result.error!
-                    ]))
-                    return
-                }
-
-                let json = JSON(response.result.value!)
-
-                onSuccess(json)
-
+    func getAll<T: Decodable>(api: String, decodable: T.Type, completion: @escaping (_ details: [T]) -> Void) {
+        Alamofire.request(baseURL + api, method: .get).responseJSON { response in
+            let result_ = response.data
+            do {
+                let data = try JSONDecoder().decode([T].self, from: result_!)
+                print("data[0] : \(data[0])")
+                completion(data)
+            } catch let e as NSError {
+                print("error : \(e)")
+            }
         }
-
     }
-
-    func getOne(objId: Int, api: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(JSON) -> Void) {
-
-        Alamofire.request(baseURL + api + String(objId))
-            .responseJSON { response in
-                // check for errors
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling GET on \(api)")
-                    print(response.result.error!)
-                    onFailure(JSON([
-                        "error": response.result.error!
-                    ]))
-                    return
-                }
-
-                let json = JSON(response.result.value!)
-
-                onSuccess(json)
-        }
-
-    }
-
-    func create(data: Any, api: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(JSON) -> Void) {
-
-        Alamofire.request(baseURL + api, method: .post, parameters: data as? Parameters)
-            .responseJSON { response in
-                // check for errors
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling CREATE on \(api)")
-                    print(response.result.error!)
-                    onFailure(JSON([
-                        "error": response.result.error!
-                    ]))
-                    return
-                }
-
-                let json = JSON(response.result.value!)
-
-                onSuccess(json)
-        }
-
-    }
-
-    func update(objId: Int, data: Any, api: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(JSON) -> Void) {
-
-        Alamofire.request(baseURL + api + String(objId), method: .put, parameters: data as? Parameters)
-            .responseJSON { response in
-                // check for errors
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling UPDATE on \(api)")
-                    print(response.result.error!)
-                    onFailure(JSON([
-                        "error": response.result.error!
-                    ]))
-                    return
-                }
-
-                let json = JSON(response.result.value!)
-
-                onSuccess(json)
-        }
-
-    }
-
-    func delete(objId: Int, api: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(JSON) -> Void) {
-
-        Alamofire.request(baseURL + api + String(objId), method: .delete)
-            .responseJSON { response in
-                // check for errors
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling GET on \(api)")
-                    print(response.result.error!)
-                    onFailure(JSON([
-                        "error": response.result.error!
-                    ]))
-                    return
-                }
-
-                let json = JSON(response.result.value!)
-
-                onSuccess(json)
-        }
-
-    }
-
+    
 }

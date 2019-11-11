@@ -7,9 +7,15 @@
 //
 
 import Foundation
+import Alamofire
 
+// MARK: - Album
 struct Album: Codable {
-    var userId: Int
-    var id: Int
-    var title: String
+    let userID, id: Int
+    let title: String
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "userId"
+        case id, title
+    }
 }

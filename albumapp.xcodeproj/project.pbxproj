@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522169C2378411C000026C3 /* KeyChainWrapper.swift */; };
-		252216B0237959FC000026C3 /* OldAlbum.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216AF237959FC000026C3 /* OldAlbum.Model.swift */; };
-		252216B423795AE2000026C3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B323795AE2000026C3 /* Endpoint.swift */; };
-		252216B623795BA2000026C3 /* GenericAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B523795BA2000026C3 /* GenericAPIClient.swift */; };
-		252216B823795C01000026C3 /* AlbumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B723795C01000026C3 /* AlbumClient.swift */; };
-		252216BA23795C78000026C3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B923795C78000026C3 /* Result.swift */; };
+		252216B0237959FC000026C3 /* Album.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216AF237959FC000026C3 /* Album.Model.swift */; };
 		2535E0A6237A57B4006B2159 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 2535E0A5237A57B4006B2159 /* albums.json */; };
 		2540A3C32377ED640021FB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3C22377ED640021FB11 /* AppDelegate.swift */; };
 		2540A3C52377ED640021FB11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3C42377ED640021FB11 /* SceneDelegate.swift */; };
@@ -28,6 +24,9 @@
 		2540A4052377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
 		2540A4062377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
 		2540A4072377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
+		25A8096E237A712600F07132 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A8096D237A712600F07132 /* photos.json */; };
+		25A80970237A714700F07132 /* Photo.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8096F237A714700F07132 /* Photo.Model.swift */; };
+		25A80974237A849B00F07132 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A80973237A849B00F07132 /* PhotoViewController.swift */; };
 		3E7D9CA377D2DE4A4E6B4780 /* Pods_albumapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA0FDF5908202B42728CF8 /* Pods_albumapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +49,7 @@
 
 /* Begin PBXFileReference section */
 		2522169C2378411C000026C3 /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
-		252216AF237959FC000026C3 /* OldAlbum.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAlbum.Model.swift; sourceTree = "<group>"; };
-		252216B323795AE2000026C3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		252216B523795BA2000026C3 /* GenericAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPIClient.swift; sourceTree = "<group>"; };
-		252216B723795C01000026C3 /* AlbumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumClient.swift; sourceTree = "<group>"; };
-		252216B923795C78000026C3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		252216AF237959FC000026C3 /* Album.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.Model.swift; sourceTree = "<group>"; };
 		2535E0A5237A57B4006B2159 /* albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		2540A3BF2377ED640021FB11 /* albumapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = albumapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2540A3C22377ED640021FB11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +67,9 @@
 		2540A3E62377ED660021FB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2540A3F32377F0490021FB11 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		2540A4042377FE870021FB11 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25A8096D237A712600F07132 /* photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
+		25A8096F237A714700F07132 /* Photo.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.Model.swift; sourceTree = "<group>"; };
+		25A80973237A849B00F07132 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		57AA0FDF5908202B42728CF8 /* Pods_albumapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_albumapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8566AE2F7B6653D28028EEBD /* Pods-albumapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumapp.release.xcconfig"; path = "Target Support Files/Pods-albumapp/Pods-albumapp.release.xcconfig"; sourceTree = "<group>"; };
 		FED77D59EDFBD7EF5EB2E939 /* Pods-albumapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumapp.debug.xcconfig"; path = "Target Support Files/Pods-albumapp/Pods-albumapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +104,7 @@
 		252216AD23795977000026C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25A80973237A849B00F07132 /* PhotoViewController.swift */,
 				2540A3C62377ED640021FB11 /* AlbumViewController.swift */,
 			);
 			path = Controllers;
@@ -114,19 +113,10 @@
 		252216AE237959D0000026C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				252216AF237959FC000026C3 /* OldAlbum.Model.swift */,
+				252216AF237959FC000026C3 /* Album.Model.swift */,
+				25A8096F237A714700F07132 /* Photo.Model.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		252216B123795A9F000026C3 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				252216B323795AE2000026C3 /* Endpoint.swift */,
-				252216B523795BA2000026C3 /* GenericAPIClient.swift */,
-				252216B923795C78000026C3 /* Result.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		252216B223795AA4000026C3 /* Utils */ = {
@@ -145,18 +135,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		252216C4237A4189000026C3 /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-				252216B723795C01000026C3 /* AlbumClient.swift */,
-			);
-			path = Clients;
-			sourceTree = "<group>";
-		};
 		2535E0A4237A578A006B2159 /* MockAPI */ = {
 			isa = PBXGroup;
 			children = (
 				2535E0A5237A57B4006B2159 /* albums.json */,
+				25A8096D237A712600F07132 /* photos.json */,
 			);
 			path = MockAPI;
 			sourceTree = "<group>";
@@ -190,8 +173,6 @@
 			children = (
 				2535E0A4237A578A006B2159 /* MockAPI */,
 				252216B223795AA4000026C3 /* Utils */,
-				252216C4237A4189000026C3 /* Clients */,
-				252216B123795A9F000026C3 /* Networking */,
 				252216AE237959D0000026C3 /* Models */,
 				252216AD23795977000026C3 /* Controllers */,
 				2540A3C22377ED640021FB11 /* AppDelegate.swift */,
@@ -349,6 +330,7 @@
 				2540A4052377FE870021FB11 /* Podfile in Resources */,
 				2540A3F42377F0490021FB11 /* .swiftlint.yml in Resources */,
 				2540A3CF2377ED650021FB11 /* LaunchScreen.storyboard in Resources */,
+				25A8096E237A712600F07132 /* photos.json in Resources */,
 				2535E0A6237A57B4006B2159 /* albums.json in Resources */,
 				2540A3CC2377ED650021FB11 /* Assets.xcassets in Resources */,
 				2540A3CA2377ED650021FB11 /* Main.storyboard in Resources */,
@@ -440,15 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252216B423795AE2000026C3 /* Endpoint.swift in Sources */,
-				252216B0237959FC000026C3 /* OldAlbum.Model.swift in Sources */,
+				252216B0237959FC000026C3 /* Album.Model.swift in Sources */,
 				2540A3C72377ED640021FB11 /* AlbumViewController.swift in Sources */,
 				2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */,
-				252216B823795C01000026C3 /* AlbumClient.swift in Sources */,
-				252216BA23795C78000026C3 /* Result.swift in Sources */,
 				2540A3C32377ED640021FB11 /* AppDelegate.swift in Sources */,
+				25A80974237A849B00F07132 /* PhotoViewController.swift in Sources */,
 				2540A3C52377ED640021FB11 /* SceneDelegate.swift in Sources */,
-				252216B623795BA2000026C3 /* GenericAPIClient.swift in Sources */,
+				25A80970237A714700F07132 /* Photo.Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

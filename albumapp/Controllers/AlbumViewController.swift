@@ -7,21 +7,29 @@
 //
 
 import UIKit
-import SwiftyJSON
 import Foundation
 
 class AlbumViewController: UITableViewController {
 
     var albums: [Album] = []
-    
+
+    private let client = AlbumClient()
+
     /// Get todos on load
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIManager
-            .sharedInstance
-            .getAll(api: "albums", decodable: Album.self, completion: <#T##([Decodable]) -> Void#>)
-    }
 
+        client.getAll(from: .GETALL) { [weak self] result in
+
+            switch result {
+            case .success(let albums):
+                guard let albums = albums else { return }
+                print(albums)
+            case .failure(let error):
+                print("the error \(error)")
+            }
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.albums.count

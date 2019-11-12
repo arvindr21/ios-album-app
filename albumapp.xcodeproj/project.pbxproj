@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2522169B23783ECA000026C3 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522169A23783ECA000026C3 /* RequestInterceptor.swift */; };
 		2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522169C2378411C000026C3 /* KeyChainWrapper.swift */; };
+		252216B0237959FC000026C3 /* OldAlbum.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216AF237959FC000026C3 /* OldAlbum.Model.swift */; };
+		252216B423795AE2000026C3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B323795AE2000026C3 /* Endpoint.swift */; };
+		252216B623795BA2000026C3 /* GenericAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B523795BA2000026C3 /* GenericAPIClient.swift */; };
+		252216B823795C01000026C3 /* AlbumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B723795C01000026C3 /* AlbumClient.swift */; };
+		252216BA23795C78000026C3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216B923795C78000026C3 /* Result.swift */; };
+		2535E0A6237A57B4006B2159 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 2535E0A5237A57B4006B2159 /* albums.json */; };
 		2540A3C32377ED640021FB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3C22377ED640021FB11 /* AppDelegate.swift */; };
 		2540A3C52377ED640021FB11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3C42377ED640021FB11 /* SceneDelegate.swift */; };
 		2540A3C72377ED640021FB11 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3C62377ED640021FB11 /* AlbumViewController.swift */; };
@@ -20,15 +25,6 @@
 		2540A3F42377F0490021FB11 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2540A3F32377F0490021FB11 /* .swiftlint.yml */; };
 		2540A3F52377F0490021FB11 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2540A3F32377F0490021FB11 /* .swiftlint.yml */; };
 		2540A3F62377F0490021FB11 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2540A3F32377F0490021FB11 /* .swiftlint.yml */; };
-		2540A3F92377F9A90021FB11 /* album.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3F82377F9A90021FB11 /* album.model.swift */; };
-		2540A3FA2377F9A90021FB11 /* album.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3F82377F9A90021FB11 /* album.model.swift */; };
-		2540A3FB2377F9A90021FB11 /* album.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3F82377F9A90021FB11 /* album.model.swift */; };
-		2540A3FD2377F9E00021FB11 /* photo.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3FC2377F9E00021FB11 /* photo.model.swift */; };
-		2540A3FE2377F9E00021FB11 /* photo.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3FC2377F9E00021FB11 /* photo.model.swift */; };
-		2540A3FF2377F9E00021FB11 /* photo.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A3FC2377F9E00021FB11 /* photo.model.swift */; };
-		2540A4012377FB600021FB11 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A4002377FB600021FB11 /* APIManager.swift */; };
-		2540A4022377FB600021FB11 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A4002377FB600021FB11 /* APIManager.swift */; };
-		2540A4032377FB600021FB11 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2540A4002377FB600021FB11 /* APIManager.swift */; };
 		2540A4052377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
 		2540A4062377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
 		2540A4072377FE870021FB11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2540A4042377FE870021FB11 /* Podfile */; };
@@ -53,8 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2522169A23783ECA000026C3 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
 		2522169C2378411C000026C3 /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
+		252216AF237959FC000026C3 /* OldAlbum.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAlbum.Model.swift; sourceTree = "<group>"; };
+		252216B323795AE2000026C3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		252216B523795BA2000026C3 /* GenericAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPIClient.swift; sourceTree = "<group>"; };
+		252216B723795C01000026C3 /* AlbumClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumClient.swift; sourceTree = "<group>"; };
+		252216B923795C78000026C3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2535E0A5237A57B4006B2159 /* albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		2540A3BF2377ED640021FB11 /* albumapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = albumapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2540A3C22377ED640021FB11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2540A3C42377ED640021FB11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,9 +71,6 @@
 		2540A3E42377ED660021FB11 /* albumappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumappUITests.swift; sourceTree = "<group>"; };
 		2540A3E62377ED660021FB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2540A3F32377F0490021FB11 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		2540A3F82377F9A90021FB11 /* album.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = album.model.swift; sourceTree = "<group>"; };
-		2540A3FC2377F9E00021FB11 /* photo.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.model.swift; sourceTree = "<group>"; };
-		2540A4002377FB600021FB11 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		2540A4042377FE870021FB11 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		57AA0FDF5908202B42728CF8 /* Pods_albumapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_albumapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8566AE2F7B6653D28028EEBD /* Pods-albumapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumapp.release.xcconfig"; path = "Target Support Files/Pods-albumapp/Pods-albumapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +103,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252216AD23795977000026C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2540A3C62377ED640021FB11 /* AlbumViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		252216AE237959D0000026C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				252216AF237959FC000026C3 /* OldAlbum.Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		252216B123795A9F000026C3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				252216B323795AE2000026C3 /* Endpoint.swift */,
+				252216B523795BA2000026C3 /* GenericAPIClient.swift */,
+				252216B923795C78000026C3 /* Result.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		252216B223795AA4000026C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2522169C2378411C000026C3 /* KeyChainWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		252216C3237A4102000026C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2540A3C82377ED650021FB11 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		252216C4237A4189000026C3 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				252216B723795C01000026C3 /* AlbumClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		2535E0A4237A578A006B2159 /* MockAPI */ = {
+			isa = PBXGroup;
+			children = (
+				2535E0A5237A57B4006B2159 /* albums.json */,
+			);
+			path = MockAPI;
+			sourceTree = "<group>";
+		};
 		2540A3B62377ED640021FB11 = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +188,18 @@
 		2540A3C12377ED640021FB11 /* albumapp */ = {
 			isa = PBXGroup;
 			children = (
-				2540A3F72377F9910021FB11 /* Models */,
+				2535E0A4237A578A006B2159 /* MockAPI */,
+				252216B223795AA4000026C3 /* Utils */,
+				252216C4237A4189000026C3 /* Clients */,
+				252216B123795A9F000026C3 /* Networking */,
+				252216AE237959D0000026C3 /* Models */,
+				252216AD23795977000026C3 /* Controllers */,
 				2540A3C22377ED640021FB11 /* AppDelegate.swift */,
 				2540A3C42377ED640021FB11 /* SceneDelegate.swift */,
-				2540A3C62377ED640021FB11 /* AlbumViewController.swift */,
-				2540A3C82377ED650021FB11 /* Main.storyboard */,
+				252216C3237A4102000026C3 /* Views */,
 				2540A3CB2377ED650021FB11 /* Assets.xcassets */,
 				2540A3CD2377ED650021FB11 /* LaunchScreen.storyboard */,
 				2540A3D02377ED650021FB11 /* Info.plist */,
-				2540A4002377FB600021FB11 /* APIManager.swift */,
-				2522169A23783ECA000026C3 /* RequestInterceptor.swift */,
-				2522169C2378411C000026C3 /* KeyChainWrapper.swift */,
 			);
 			path = albumapp;
 			sourceTree = "<group>";
@@ -163,15 +220,6 @@
 				2540A3E62377ED660021FB11 /* Info.plist */,
 			);
 			path = albumappUITests;
-			sourceTree = "<group>";
-		};
-		2540A3F72377F9910021FB11 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2540A3F82377F9A90021FB11 /* album.model.swift */,
-				2540A3FC2377F9E00021FB11 /* photo.model.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		AABF92F183F517BEDE86A8D9 /* Pods */ = {
@@ -202,7 +250,7 @@
 				2540A3BB2377ED640021FB11 /* Sources */,
 				2540A3BC2377ED640021FB11 /* Frameworks */,
 				2540A3BD2377ED640021FB11 /* Resources */,
-				2540A3F22377EF7A0021FB11 /* ShellScript */,
+				2540A3F22377EF7A0021FB11 /* Swiftlint */,
 				B76A9BB7139E089B3B274BCD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -301,6 +349,7 @@
 				2540A4052377FE870021FB11 /* Podfile in Resources */,
 				2540A3F42377F0490021FB11 /* .swiftlint.yml in Resources */,
 				2540A3CF2377ED650021FB11 /* LaunchScreen.storyboard in Resources */,
+				2535E0A6237A57B4006B2159 /* albums.json in Resources */,
 				2540A3CC2377ED650021FB11 /* Assets.xcassets in Resources */,
 				2540A3CA2377ED650021FB11 /* Main.storyboard in Resources */,
 			);
@@ -327,7 +376,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2540A3F22377EF7A0021FB11 /* ShellScript */ = {
+		2540A3F22377EF7A0021FB11 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,6 +385,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -390,14 +440,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2540A4012377FB600021FB11 /* APIManager.swift in Sources */,
-				2522169B23783ECA000026C3 /* RequestInterceptor.swift in Sources */,
+				252216B423795AE2000026C3 /* Endpoint.swift in Sources */,
+				252216B0237959FC000026C3 /* OldAlbum.Model.swift in Sources */,
 				2540A3C72377ED640021FB11 /* AlbumViewController.swift in Sources */,
-				2540A3FD2377F9E00021FB11 /* photo.model.swift in Sources */,
-				2540A3F92377F9A90021FB11 /* album.model.swift in Sources */,
 				2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */,
+				252216B823795C01000026C3 /* AlbumClient.swift in Sources */,
+				252216BA23795C78000026C3 /* Result.swift in Sources */,
 				2540A3C32377ED640021FB11 /* AppDelegate.swift in Sources */,
 				2540A3C52377ED640021FB11 /* SceneDelegate.swift in Sources */,
+				252216B623795BA2000026C3 /* GenericAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2540A4022377FB600021FB11 /* APIManager.swift in Sources */,
-				2540A3FE2377F9E00021FB11 /* photo.model.swift in Sources */,
 				2540A3DA2377ED650021FB11 /* albumappTests.swift in Sources */,
-				2540A3FA2377F9A90021FB11 /* album.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,10 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2540A4032377FB600021FB11 /* APIManager.swift in Sources */,
-				2540A3FF2377F9E00021FB11 /* photo.model.swift in Sources */,
 				2540A3E52377ED660021FB11 /* albumappUITests.swift in Sources */,
-				2540A3FB2377F9A90021FB11 /* album.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

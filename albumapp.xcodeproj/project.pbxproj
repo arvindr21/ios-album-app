@@ -27,6 +27,7 @@
 		25A8096E237A712600F07132 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A8096D237A712600F07132 /* photos.json */; };
 		25A80970237A714700F07132 /* Photo.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8096F237A714700F07132 /* Photo.Model.swift */; };
 		25A80974237A849B00F07132 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A80973237A849B00F07132 /* PhotoViewController.swift */; };
+		25A809B9237D0D9200F07132 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A809B8237D0D9200F07132 /* ActivityIndicator.swift */; };
 		3E7D9CA377D2DE4A4E6B4780 /* Pods_albumapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA0FDF5908202B42728CF8 /* Pods_albumapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		25A8096D237A712600F07132 /* photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
 		25A8096F237A714700F07132 /* Photo.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.Model.swift; sourceTree = "<group>"; };
 		25A80973237A849B00F07132 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		25A809B8237D0D9200F07132 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		57AA0FDF5908202B42728CF8 /* Pods_albumapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_albumapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8566AE2F7B6653D28028EEBD /* Pods-albumapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumapp.release.xcconfig"; path = "Target Support Files/Pods-albumapp/Pods-albumapp.release.xcconfig"; sourceTree = "<group>"; };
 		FED77D59EDFBD7EF5EB2E939 /* Pods-albumapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumapp.debug.xcconfig"; path = "Target Support Files/Pods-albumapp/Pods-albumapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				2522169C2378411C000026C3 /* KeyChainWrapper.swift */,
+				25A809B8237D0D9200F07132 /* ActivityIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				2540A3BD2377ED640021FB11 /* Resources */,
 				2540A3F22377EF7A0021FB11 /* Swiftlint */,
 				B76A9BB7139E089B3B274BCD /* [CP] Embed Pods Frameworks */,
+				250EC31A237D852B00F996E6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -358,6 +362,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		250EC31A237D852B00F996E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
 		2540A3F22377EF7A0021FB11 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +447,7 @@
 				2540A3C72377ED640021FB11 /* AlbumViewController.swift in Sources */,
 				2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */,
 				2540A3C32377ED640021FB11 /* AppDelegate.swift in Sources */,
+				25A809B9237D0D9200F07132 /* ActivityIndicator.swift in Sources */,
 				25A80974237A849B00F07132 /* PhotoViewController.swift in Sources */,
 				2540A3C52377ED640021FB11 /* SceneDelegate.swift in Sources */,
 				25A80970237A714700F07132 /* Photo.Model.swift in Sources */,

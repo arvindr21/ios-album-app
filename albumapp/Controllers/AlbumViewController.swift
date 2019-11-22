@@ -28,8 +28,11 @@ class AlbumViewController: UITableViewController {
             }
         }
     }
+    
+   
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(self.albums.count)
         return self.albums.count
     }
 

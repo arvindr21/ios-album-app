@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086B5BA9237ECF69006CA95E /* albumappUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B5BA8237ECF69006CA95E /* albumappUnitTests.swift */; };
+		086B5BB223827B16006CA95E /* Album.json in Resources */ = {isa = PBXBuildFile; fileRef = 086B5BB123827B16006CA95E /* Album.json */; };
+		086B5BB42387043A006CA95E /* AlbumTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B5BB323870439006CA95E /* AlbumTestCase.swift */; };
 		2522169D2378411C000026C3 /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522169C2378411C000026C3 /* KeyChainWrapper.swift */; };
 		252216B0237959FC000026C3 /* Album.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252216AF237959FC000026C3 /* Album.Model.swift */; };
 		2535E0A6237A57B4006B2159 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 2535E0A5237A57B4006B2159 /* albums.json */; };
@@ -32,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		086B5BAB237ECF69006CA95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2540A3B72377ED640021FB11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2540A3BE2377ED640021FB11;
+			remoteInfo = albumapp;
+		};
 		2540A3D62377ED650021FB11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2540A3B72377ED640021FB11 /* Project object */;
@@ -49,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086B5BA6237ECF69006CA95E /* albumappUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albumappUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		086B5BA8237ECF69006CA95E /* albumappUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumappUnitTests.swift; sourceTree = "<group>"; };
+		086B5BAA237ECF69006CA95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086B5BB123827B16006CA95E /* Album.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Album.json; sourceTree = "<group>"; };
+		086B5BB323870439006CA95E /* AlbumTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTestCase.swift; sourceTree = "<group>"; };
 		2522169C2378411C000026C3 /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
 		252216AF237959FC000026C3 /* Album.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.Model.swift; sourceTree = "<group>"; };
 		2535E0A5237A57B4006B2159 /* albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
@@ -78,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		086B5BA3237ECF69006CA95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2540A3BC2377ED640021FB11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +125,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086B5BA7237ECF69006CA95E /* albumappUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				086B5BB023827AB9006CA95E /* TestData */,
+				086B5BA8237ECF69006CA95E /* albumappUnitTests.swift */,
+				086B5BAA237ECF69006CA95E /* Info.plist */,
+				086B5BB323870439006CA95E /* AlbumTestCase.swift */,
+			);
+			path = albumappUnitTests;
+			sourceTree = "<group>";
+		};
+		086B5BB023827AB9006CA95E /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				086B5BB123827B16006CA95E /* Album.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		252216AD23795977000026C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +195,7 @@
 				2540A3C12377ED640021FB11 /* albumapp */,
 				2540A3D82377ED650021FB11 /* albumappTests */,
 				2540A3E32377ED660021FB11 /* albumappUITests */,
+				086B5BA7237ECF69006CA95E /* albumappUnitTests */,
 				2540A3C02377ED640021FB11 /* Products */,
 				2540A4042377FE870021FB11 /* Podfile */,
 				AABF92F183F517BEDE86A8D9 /* Pods */,
@@ -167,6 +209,7 @@
 				2540A3BF2377ED640021FB11 /* albumapp.app */,
 				2540A3D52377ED650021FB11 /* albumappTests.xctest */,
 				2540A3E02377ED660021FB11 /* albumappUITests.xctest */,
+				086B5BA6237ECF69006CA95E /* albumappUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +269,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		086B5BA5237ECF69006CA95E /* albumappUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086B5BAF237ECF69006CA95E /* Build configuration list for PBXNativeTarget "albumappUnitTests" */;
+			buildPhases = (
+				086B5BA2237ECF69006CA95E /* Sources */,
+				086B5BA3237ECF69006CA95E /* Frameworks */,
+				086B5BA4237ECF69006CA95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				086B5BAC237ECF69006CA95E /* PBXTargetDependency */,
+			);
+			name = albumappUnitTests;
+			productName = albumappUnitTests;
+			productReference = 086B5BA6237ECF69006CA95E /* albumappUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2540A3BE2377ED640021FB11 /* albumapp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2540A3E92377ED660021FB11 /* Build configuration list for PBXNativeTarget "albumapp" */;
@@ -289,10 +350,14 @@
 		2540A3B72377ED640021FB11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = arvind;
 				TargetAttributes = {
+					086B5BA5237ECF69006CA95E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 2540A3BE2377ED640021FB11;
+					};
 					2540A3BE2377ED640021FB11 = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -322,11 +387,20 @@
 				2540A3BE2377ED640021FB11 /* albumapp */,
 				2540A3D42377ED650021FB11 /* albumappTests */,
 				2540A3DF2377ED660021FB11 /* albumappUITests */,
+				086B5BA5237ECF69006CA95E /* albumappUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		086B5BA4237ECF69006CA95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086B5BB223827B16006CA95E /* Album.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2540A3BD2377ED640021FB11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,6 +513,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		086B5BA2237ECF69006CA95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086B5BA9237ECF69006CA95E /* albumappUnitTests.swift in Sources */,
+				086B5BB42387043A006CA95E /* AlbumTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2540A3BB2377ED640021FB11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,6 +556,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		086B5BAC237ECF69006CA95E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2540A3BE2377ED640021FB11 /* albumapp */;
+			targetProxy = 086B5BAB237ECF69006CA95E /* PBXContainerItemProxy */;
+		};
 		2540A3D72377ED650021FB11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2540A3BE2377ED640021FB11 /* albumapp */;
@@ -505,6 +593,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		086B5BAD237ECF69006CA95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = albumappUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.albumappUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/albumapp.app/albumapp";
+			};
+			name = Debug;
+		};
+		086B5BAE237ECF69006CA95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = albumappUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.albumappUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/albumapp.app/albumapp";
+			};
+			name = Release;
+		};
 		2540A3E72377ED660021FB11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -627,6 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VND6E472H3;
 				INFOPLIST_FILE = albumapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +775,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VND6E472H3;
 				INFOPLIST_FILE = albumapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -744,6 +874,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		086B5BAF237ECF69006CA95E /* Build configuration list for PBXNativeTarget "albumappUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086B5BAD237ECF69006CA95E /* Debug */,
+				086B5BAE237ECF69006CA95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2540A3BA2377ED640021FB11 /* Build configuration list for PBXProject "albumapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

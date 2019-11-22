@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D3E2F6B0-5478-4980-9E00-C6AFD247C1EB"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C8272A6-D914-4677-B808-15B242440E5C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "albumapp/Controllers/PhotoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "PhotoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8C8272A6-D914-4677-B808-15B242440E5C - 43f6f0170a024565"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "albumapp.PhotoViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "albumapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pratpandey/iCloud%20Drive%20(Archive)/Documents/Pratishtha/Costco/AlbumApp/albumapp/Controllers/PhotoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "8C8272A6-D914-4677-B808-15B242440E5C - 36db37db25a875ea"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;albumapp.Photo&gt;&gt;) -&gt; () in albumapp.PhotoViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "albumapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pratpandey/iCloud%20Drive%20(Archive)/Documents/Pratishtha/Costco/AlbumApp/albumapp/Controllers/PhotoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "111">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

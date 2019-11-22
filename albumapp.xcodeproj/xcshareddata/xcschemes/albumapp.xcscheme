@@ -54,6 +54,16 @@
                ReferencedContainer = "container:albumapp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "086B5BA5237ECF69006CA95E"
+               BuildableName = "albumappUnitTests.xctest"
+               BlueprintName = "albumappUnitTests"
+               ReferencedContainer = "container:albumapp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

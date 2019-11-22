@@ -140,7 +140,7 @@ extension DataRequest {
 
     @discardableResult
     fileprivate func responseDecodable<T: Decodable>(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<T>) -> Void) -> Self {
-        return response(queu e: queue, responseSerializer: decodableResponseSerializer(), completionHandler: completionHandler)
+        return response(queue: queue, responseSerializer: decodableResponseSerializer(), completionHandler: completionHandler)
     }
 
     @discardableResult
